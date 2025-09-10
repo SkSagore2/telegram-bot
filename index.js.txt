@@ -10,11 +10,12 @@ bot.command("hello", (ctx) => ctx.reply("👋 Hello from Vercel Telegram Bot!"))
 
 // Webhook setup
 app.use(bot.webhookCallback("/secret-path"));
-bot.telegram.setWebhook("https://telegram-bot-beta-hazel.vercel.app/secret-path");
+bot.telegram.setWebhook("telegram-bot-delta-one.vercel.app/secret-path");
 
 // Default route
 app.get("/", (req, res) => {
   res.send("Bot is Alive 🚀");
 });
+
 
 module.exports = app;
